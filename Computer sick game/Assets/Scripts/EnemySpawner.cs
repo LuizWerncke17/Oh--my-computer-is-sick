@@ -65,13 +65,13 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenWaves);
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
-        currentWave++;
     }
 
     private void EndWave()
     {
         isSpawning = false;
         timeSinceLastSpawn = 0f;
+        currentWave++;
         StartCoroutine(StartWave());
     }
 
