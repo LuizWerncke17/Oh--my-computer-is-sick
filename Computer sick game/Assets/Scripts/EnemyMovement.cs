@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [Header("Refences")]
+    [Header("References")]
     [SerializeField] private Rigidbody2D rb;
 
     [Header("Attributes")]
