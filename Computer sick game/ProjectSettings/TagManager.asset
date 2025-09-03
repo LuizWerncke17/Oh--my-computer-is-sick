@@ -44,5 +44,8 @@ TagManager:
   - name: Turrets
     uniqueID: 833623241
     locked: 0
+  - name: Enemies
+    uniqueID: 2176794477
+    locked: 0
   m_RenderingLayers:
   - Default
