@@ -26,8 +26,8 @@ public class Plot : MonoBehaviour {
     private void OnMouseDown() {
         if (tower != null) return;
 
-        GameObject towerToBuild = BuildManager.main.GetSelectdTower();
-        tower = Instantiate(towerToBuild, transform.position, Quaternion.identity);
+        Tower towerToBuild = BuildManager.main.GetSelectedTower();
+        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
 
     }
 }
