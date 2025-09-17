@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 4970429315406589578}
   - component: {fileID: 5228508990939501697}
   - component: {fileID: 2671165226062988168}
+  - component: {fileID: 3541789508779987220}
   - component: {fileID: 5785247999599744115}
-  m_Layer: 0
+  - component: {fileID: 2711113372550035052}
+  m_Layer: 6
   m_Name: LogicBomb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,6 +141,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!58 &3541789508779987220
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3839305762840078780}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.02, y: 0.02383615}
+  m_Radius: 0.3699394
 --- !u!114 &5785247999599744115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +191,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2671165226062988168}
   moveSpeed: 3
+--- !u!114 &2711113372550035052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3839305762840078780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 3
