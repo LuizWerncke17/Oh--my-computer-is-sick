@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7817169655577441367}
   - component: {fileID: 5748916225546020419}
   - component: {fileID: 1586516661052849060}
+  - component: {fileID: 7802251921481724455}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
