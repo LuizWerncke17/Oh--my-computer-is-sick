@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3839305762840078780
+--- !u!1 &8420153714109690282
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4326043434404438209}
-  - component: {fileID: 4970429315406589578}
-  - component: {fileID: 5228508990939501697}
-  - component: {fileID: 2671165226062988168}
-  - component: {fileID: 3541789508779987220}
-  - component: {fileID: 5785247999599744115}
-  - component: {fileID: 2711113372550035052}
+  - component: {fileID: 1990213572383236325}
+  - component: {fileID: 3910378000614342545}
+  - component: {fileID: 4515788887031678569}
+  - component: {fileID: 4134026395780694423}
+  - component: {fileID: 7340871469597909735}
+  - component: {fileID: 8768908174512656067}
+  - component: {fileID: 8929903884980381019}
   m_Layer: 6
-  m_Name: LogicBomb1
+  m_Name: P.H.A.G.E_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4326043434404438209
+--- !u!4 &1990213572383236325
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
+  m_GameObject: {fileID: 8420153714109690282}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.53, y: -1.55, z: 0}
-  m_LocalScale: {x: 1.8390673, y: 1.8390673, z: 1.8390673}
+  m_LocalPosition: {x: -17.45, y: -3, z: 0}
+  m_LocalScale: {x: 1.9066415, y: 1.9066415, z: 1.9066415}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4970429315406589578
+--- !u!212 &3910378000614342545
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
+  m_GameObject: {fileID: 8420153714109690282}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: -2118172819
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 16148f449aa14b14e8e498944e8dfb4b, type: 3}
+  m_Sprite: {fileID: -896906297714027919, guid: 9af79771c02cc9840b9cde7dbfeff543, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,17 +92,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5228508990939501697
+--- !u!95 &4515788887031678569
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
+  m_GameObject: {fileID: 8420153714109690282}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 92d56d7babf05cd429a4c5c18d7a5f2e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1c8a7ae5b2d72704b9747ee7fccea21c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -114,14 +114,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!50 &2671165226062988168
+--- !u!50 &4134026395780694423
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
+  m_GameObject: {fileID: 8420153714109690282}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
@@ -141,13 +141,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &3541789508779987220
-CircleCollider2D:
+--- !u!114 &7340871469597909735
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
+  m_GameObject: {fileID: 8420153714109690282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62556fe3294ac4a42a4cd834b246cf85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4134026395780694423}
+  moveSpeed: 2
+--- !u!114 &8768908174512656067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420153714109690282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 3
+  moneyWorth: 15
+--- !u!61 &8929903884980381019
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420153714109690282}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -175,33 +203,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02, y: 0.02383615}
-  m_Radius: 0.3699394
---- !u!114 &5785247999599744115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62556fe3294ac4a42a4cd834b246cf85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2671165226062988168}
-  moveSpeed: 3
---- !u!114 &2711113372550035052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3839305762840078780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 3
-  moneyWorth: 15
+  m_Offset: {x: 0.009214126, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5116177, y: 1}
+  m_EdgeRadius: 0
