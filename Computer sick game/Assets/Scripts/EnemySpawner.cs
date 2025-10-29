@@ -72,6 +72,7 @@ public class EnemySpawner : MonoBehaviour
         isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
+        LevelManager.main.wave++;
         StartCoroutine(StartWave());
     }
 
