@@ -24,12 +24,19 @@ public class EnemyMovement : MonoBehaviour
 
             if (pathIndex == LevelManager.main.path.Length)
             {
+                Health_LB1 health = GetComponent<Health_LB1>();
+                LevelManager.main.life -= health != null ? health.Damage : 1;
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             } else
             {
                 target = LevelManager.main.path[pathIndex];
+            }
+            if (LevelManager.main.life <= 0)
+            {
+                LevelManager.main.life = 0;
+                Destroy(gameObject);
             }
         }
     }

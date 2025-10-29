@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour {
     //Depois disso entendi que o comando "target = LevelManager.main.path[pathIndex];" diz que onde o inimigo tem que ir é o index em sequência dos pontos onde o inimigo tem que seguir que são colocados dentro do jogo, fazendo assim o seu path como alvo.
 
     public int money;
+    public int wave;
+    public int life;
 
     private void Awake() {
         main = this;
@@ -16,6 +18,8 @@ public class LevelManager : MonoBehaviour {
 
     private void Start() {
         money = 100;
+        life = 100;
+        wave = 1;
     }
 
     public void IncreaseMoney(int amount) {
