@@ -8,6 +8,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
+    [SerializeField] Animator anim;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 4f;
@@ -22,6 +23,7 @@ public class Turret : MonoBehaviour
         if (target == null)
         {
             FindTarget();
+            anim.SetBool("Animate", false);
             return;
         }
 
@@ -30,6 +32,7 @@ public class Turret : MonoBehaviour
         if (!CheckTargetIsInRange())
         {
             target = null;
+            anim.SetBool("Animate", false);
         }
         else
         {
@@ -39,6 +42,7 @@ public class Turret : MonoBehaviour
             {
                 shoot();
                 timeUntilFire = 0f;
+                anim.SetBool("Animate", true);
             }
         }
     }
