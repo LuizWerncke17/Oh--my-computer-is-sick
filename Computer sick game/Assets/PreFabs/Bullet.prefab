@@ -168,4 +168,5 @@ MonoBehaviour:
   rb: {fileID: 3677470149622511640}
   bulletSpeed: 10
   bps: 1
-  bulletDamage: 1
+  bulletDamage: 2147483647
+  timeSinceSpawn: 0

@@ -5,8 +5,8 @@ public class Health_LB1 : MonoBehaviour
 {
     [Header("Attributes")]
     [SerializeField] private double hitPoints = 3;
-    [SerializeField] private int moneyWorth = 15;
-    public int Damage = 3;
+    [SerializeField] private int moneyWorth = 5;
+    public int Damage = 1;
 
     private bool isDestroyed = false;
     public void takeDamage(int dmg) {
