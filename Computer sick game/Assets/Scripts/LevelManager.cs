@@ -29,9 +29,10 @@ public class LevelManager : MonoBehaviour {
     public bool SpendMoney(int amount) {
         if (amount <= money) {
             money -= amount;
-            return true;
+            return true;        
         } else {
             return false;
         }
+
     }
 }

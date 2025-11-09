@@ -98,6 +98,7 @@ public class EnemySpawner : MonoBehaviour
         if (currentWave > 50)
         {
             LevelManager.main.wave = 50;
+            LevelManager.main.money = 0;
             Debug.Log("Você venceu o jogo!");
             return;
         }

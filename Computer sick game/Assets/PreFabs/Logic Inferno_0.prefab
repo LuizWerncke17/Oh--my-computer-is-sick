@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 15
-  moneyWorth: 50
+  moneyWorth: 75
   Damage: 3
 --- !u!114 &1106581224987591957
 MonoBehaviour:
@@ -205,5 +205,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4343739392847688208}
-  moveSpeed: 2
+  moveSpeed: 2.25
   rotationSpeed: 180

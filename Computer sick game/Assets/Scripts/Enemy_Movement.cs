@@ -67,6 +67,8 @@ public class Enemy_Movement : MonoBehaviour
             if (LevelManager.main.life <= 0)
             {
                 LevelManager.main.life = 0;
+                LevelManager.main.money = 0;
+                Debug.Log("Game Over!");
                 Destroy(gameObject);
             }
         }
