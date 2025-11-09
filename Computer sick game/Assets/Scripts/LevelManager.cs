@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
-    public static LevelManager main; //Aqui é criado a classe do levelManager, e diz que ele é o principal
+    public static LevelManager main; //Aqui ï¿½ criado a classe do levelManager, e diz que ele ï¿½ o principal
 
     public Transform startPoint;
-    public Transform[] path; //Aqui são os campos que podem receber informações dentro do jogo, isso é uma lista e a de cima é algo fixo, nessa lista dentro do jogo tu coloca todos os pontos que vão ser o caminho dos bixos no jogo.
-    //Depois disso entendi que o comando "target = LevelManager.main.path[pathIndex];" diz que onde o inimigo tem que ir é o index em sequência dos pontos onde o inimigo tem que seguir que são colocados dentro do jogo, fazendo assim o seu path como alvo.
+    public Transform[] path; //Aqui sï¿½o os campos que podem receber informaï¿½ï¿½es dentro do jogo, isso ï¿½ uma lista e a de cima ï¿½ algo fixo, nessa lista dentro do jogo tu coloca todos os pontos que vï¿½o ser o caminho dos bixos no jogo.
+    //Depois disso entendi que o comando "target = LevelManager.main.path[pathIndex];" diz que onde o inimigo tem que ir ï¿½ o index em sequï¿½ncia dos pontos onde o inimigo tem que seguir que sï¿½o colocados dentro do jogo, fazendo assim o seu path como alvo.
 
     public int money;
     public int wave;
@@ -31,7 +31,6 @@ public class LevelManager : MonoBehaviour {
             money -= amount;
             return true;
         } else {
-            Debug.Log("Você não tem dinheiro o suficiente para comprar esse item");
             return false;
         }
     }

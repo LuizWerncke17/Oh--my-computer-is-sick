@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3305458837676589625}
   - component: {fileID: 4343739392847688208}
   - component: {fileID: 7263329919715618046}
-  - component: {fileID: 4311682434640779020}
   - component: {fileID: 9007969537124107667}
+  - component: {fileID: 1106581224987591957}
   m_Layer: 6
   m_Name: Logic Inferno_0
   m_TagString: Untagged
@@ -177,20 +177,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.0050780475, y: 0.025387764}
   m_Radius: 0.37968922
---- !u!114 &4311682434640779020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565804218524177839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62556fe3294ac4a42a4cd834b246cf85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 4343739392847688208}
-  moveSpeed: 2
 --- !u!114 &9007969537124107667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,5 +189,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
-  moneyWorth: 15
+  hitPoints: 15
+  moneyWorth: 50
+  Damage: 3
+--- !u!114 &1106581224987591957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565804218524177839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888f6cae067f1df44b1db9b1eed26d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4343739392847688208}
+  moveSpeed: 2
+  rotationSpeed: 180

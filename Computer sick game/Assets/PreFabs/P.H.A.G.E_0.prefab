@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3910378000614342545}
   - component: {fileID: 4515788887031678569}
   - component: {fileID: 4134026395780694423}
-  - component: {fileID: 7340871469597909735}
   - component: {fileID: 8768908174512656067}
   - component: {fileID: 8929903884980381019}
+  - component: {fileID: -4417162881012478511}
   m_Layer: 6
   m_Name: P.H.A.G.E_0
   m_TagString: Untagged
@@ -141,20 +141,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &7340871469597909735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8420153714109690282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62556fe3294ac4a42a4cd834b246cf85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 4134026395780694423}
-  moveSpeed: 2
 --- !u!114 &8768908174512656067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,8 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
+  hitPoints: 3000
   moneyWorth: 15
+  Damage: 1
 --- !u!61 &8929903884980381019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -206,7 +193,7 @@ BoxCollider2D:
   m_Offset: {x: 0.009214126, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.25}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -215,3 +202,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5116177, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-4417162881012478511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420153714109690282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888f6cae067f1df44b1db9b1eed26d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 4134026395780694423}
+  moveSpeed: 2
+  rotationSpeed: 180

@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7579513720219840859}
   - component: {fileID: -5782650938285377844}
   - component: {fileID: 1311427864753676241}
-  - component: {fileID: 8079530545690264618}
   - component: {fileID: 4700904114388031023}
+  - component: {fileID: -3883068081342833531}
   m_Layer: 6
-  m_Name: Maniacware_0
+  m_Name: Maniacware
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -187,20 +187,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.43329316, y: 1.0645032}
   m_EdgeRadius: 0
---- !u!114 &8079530545690264618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8733954599048600460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62556fe3294ac4a42a4cd834b246cf85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: -5782650938285377844}
-  moveSpeed: 2
 --- !u!114 &4700904114388031023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,5 +199,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4daa80492ebd4e341adff62b6afd5096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
+  hitPoints: 10
   moneyWorth: 15
+  Damage: 1
+--- !u!114 &-3883068081342833531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8733954599048600460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 888f6cae067f1df44b1db9b1eed26d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -5782650938285377844}
+  moveSpeed: 2
+  rotationSpeed: 180
