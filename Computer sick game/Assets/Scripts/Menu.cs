@@ -22,7 +22,7 @@ public class Menu : MonoBehaviour
     {
         moneyUI.text = LevelManager.main.money.ToString();
         lifeUI.text = LevelManager.main.life.ToString();
-        WaveUI.text = LevelManager.main.wave.ToString();
+        WaveUI.text = ($"{LevelManager.main.wave.ToString()}/50");
     }
 
 
