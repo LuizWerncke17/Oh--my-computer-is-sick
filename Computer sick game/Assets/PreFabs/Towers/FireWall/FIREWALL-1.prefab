@@ -114,8 +114,8 @@ Transform:
   m_GameObject: {fileID: 4800488320553554667}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15121011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.15121}
+  m_LocalScale: {x: 1.2529491, y: 1.2529491, z: 1.2529491}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8608770839338965515}
@@ -224,8 +224,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.1521536, y: -4.129468, z: 0.15121011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4069146207047209609}
   - {fileID: 7656893711234623446}
@@ -248,7 +248,7 @@ MonoBehaviour:
     m_Bits: 64
   anim: {fileID: 4691751687055853821}
   areaObject: {fileID: 857088934485054473}
-  damageRange: 2.2
+  damageRange: 1.8
   damagePerSecond: 0.7
   checkInterval: 0.2
   lingerTimeNoEnemies: 0.1

@@ -62,8 +62,6 @@ public class AMV_Manager : MonoBehaviour
 
     public void Upgrade() {
 
-        Debug.Log("Upgrade clicado!");
-
         if (LevelManager.main.money < AMVPrice || AMVLevel >= 3)
             return;
 

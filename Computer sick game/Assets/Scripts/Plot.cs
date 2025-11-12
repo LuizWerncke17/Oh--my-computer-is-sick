@@ -11,6 +11,7 @@ public class Plot : MonoBehaviour {
     private GameObject towerOBJ;
     public AMV_Manager AMV;
     public BYTE_Manager BYTE;
+    public FIREWALL_Manager FIREWALL;
     private Color startColor;
 
     private void Start() {
@@ -47,6 +48,14 @@ public class Plot : MonoBehaviour {
                 return;
             }
 
+            // Se existe um FIREWALL_Manager nessa torre, abre a UI dele
+            if (FIREWALL != null)
+            {
+                if (FIREWALL.FIREWALLLevel < 3)
+                    FIREWALL.OpenUpgradeUI();
+                return;
+            }
+
             return;
         };
 
@@ -63,5 +72,6 @@ public class Plot : MonoBehaviour {
         towerOBJ = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
         AMV = towerOBJ.GetComponent<AMV_Manager>();
         BYTE = towerOBJ.GetComponent<BYTE_Manager>();
+        FIREWALL = towerOBJ.GetComponent<FIREWALL_Manager>();
     }
 }
