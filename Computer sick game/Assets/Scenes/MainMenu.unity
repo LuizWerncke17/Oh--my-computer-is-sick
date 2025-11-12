@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 225678190}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: Jogar
+        m_MethodName: Sair
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -651,7 +651,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 225678190}
         m_TargetAssemblyTypeName: MenuPrincipal, Assembly-CSharp
-        m_MethodName: Jogar
+        m_MethodName: Extras
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1459,8 +1459,8 @@ RectTransform:
   m_Children:
   - {fileID: 2084005854}
   - {fileID: 636745997}
-  - {fileID: 72014733}
   - {fileID: 227498890}
+  - {fileID: 72014733}
   - {fileID: 1411951713}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

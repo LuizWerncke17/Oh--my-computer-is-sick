@@ -9,11 +9,24 @@ public class MenuPrincipal : MonoBehaviour {
     public float duracaoTransicao = 1.5f;    // Mesmo tempo da animação
     public AudioSource PlaySound; // Sonzinho top do menu
 
-    // Chamado pelo botão "Jogar"
     public void Jogar() {
         Debug.Log("[MenuPrincipal] Botão Jogar clicado!");
         PlaySound.Play();
         StartCoroutine(CarregarCenaComAnimacao("SampleScene"));
+    }
+
+    public void Extras() {
+        Debug.Log("[MenuPrincipal] Botão de extras clicado!");
+        SceneManager.LoadScene("Extras");
+    }
+    public void Sair() {
+        Debug.Log("[MenuPrincipal] Saindo do jogo...");
+        Application.Quit();
+
+        // Apenas para depuração dentro do Editor:
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+    #endif
     }
 
     private IEnumerator CarregarCenaComAnimacao(string nomeCena) {
