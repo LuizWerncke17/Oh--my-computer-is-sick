@@ -7,10 +7,12 @@ public class MenuPrincipal : MonoBehaviour {
     public GameObject Transicao;       // O painel com a imagem e o Animator
     public Animator AnimationTransicao;       // O Animator do painel
     public float duracaoTransicao = 1.5f;    // Mesmo tempo da animação
+    public AudioSource PlaySound; // Sonzinho top do menu
 
     // Chamado pelo botão "Jogar"
     public void Jogar() {
         Debug.Log("[MenuPrincipal] Botão Jogar clicado!");
+        PlaySound.Play();
         StartCoroutine(CarregarCenaComAnimacao("SampleScene"));
     }
 
