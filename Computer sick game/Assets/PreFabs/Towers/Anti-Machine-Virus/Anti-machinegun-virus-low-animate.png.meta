@@ -121,9 +121,9 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_0
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 64
-        width: 18
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,9 +143,9 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_1
       rect:
         serializedVersion: 2
-        x: 39
+        x: 32
         y: 64
-        width: 18
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,10 +165,10 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 31
-        width: 18
-        height: 34
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_3
       rect:
         serializedVersion: 2
-        x: 71
-        y: 31
-        width: 18
-        height: 64
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 30
-        width: 18
-        height: 33
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +231,10 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_5
       rect:
         serializedVersion: 2
-        x: 7
-        y: 0
-        width: 18
-        height: 31
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,9 +253,9 @@ TextureImporter:
       name: Anti-machinegun-virus-low-animate_6
       rect:
         serializedVersion: 2
-        x: 39
+        x: 0
         y: 0
-        width: 18
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,11 +271,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Anti-machinegun-virus-low-animate_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b639fce00f7dd54db8f86e6fbd2b6f5
+      internalID: 1967138878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f10a261ea60c05746ac199ac9d5bf236
     internalID: 0
     vertices: []
     indices: 
@@ -292,6 +314,7 @@ TextureImporter:
       Anti-machinegun-virus-low-animate_4: 62597580021232042
       Anti-machinegun-virus-low-animate_5: 3258182676960334761
       Anti-machinegun-virus-low-animate_6: -2520409501954110085
+      Anti-machinegun-virus-low-animate_7: 1967138878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

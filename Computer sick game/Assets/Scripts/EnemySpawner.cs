@@ -12,9 +12,10 @@ public class EnemySpawner : MonoBehaviour
 
     [Header("Attributes")]
     [SerializeField] private int baseEnemies = 8;
-    [SerializeField] private float enemiesPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
+    [SerializeField] private float baseEnemiesPerSecond = 0.7f;
+    [SerializeField] private float maxEnemiesPerSecond = 3f;
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -43,7 +44,9 @@ public class EnemySpawner : MonoBehaviour
 
         timeSinceLastSpawn += Time.deltaTime;
 
-        if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
+        float currentEnemiesPerSecond = CalculateEnemiesPerSecond();
+
+        if (timeSinceLastSpawn >= (1f / currentEnemiesPerSecond) && enemiesLeftToSpawn > 0)
         {
             SpawnEnemy();
             enemiesLeftToSpawn--;
@@ -166,5 +169,11 @@ public class EnemySpawner : MonoBehaviour
         }
 
         return enemiesForThisWave;
+    }
+
+        private float CalculateEnemiesPerSecond()
+    {
+        float scaledRate = baseEnemiesPerSecond * Mathf.Pow(1.1f, currentWave - 1);
+        return Mathf.Min(scaledRate, maxEnemiesPerSecond);
     }
 }
