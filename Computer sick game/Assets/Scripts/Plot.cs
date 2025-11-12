@@ -8,7 +8,9 @@ public class Plot : MonoBehaviour {
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Color hoverColor;
 
-    private GameObject tower;
+    private GameObject towerOBJ;
+    public AMV_Manager AMV;
+    public BYTE_Manager BYTE;
     private Color startColor;
 
     private void Start() {
@@ -24,19 +26,42 @@ public class Plot : MonoBehaviour {
     }
 
     private void OnMouseDown() {
-        if (tower != null) return;
+        if (UIManager.main.IsHoveringUI())
+            return;
+
+        if (towerOBJ != null) {
+
+            // Se existe um AMV_Manager nessa torre, abre a UI dele
+            if (AMV != null)
+            {
+                if (AMV.AMVLevel < 3)
+                    AMV.OpenUpgradeUI();
+                return;
+            }
+
+            // Se existe um BYTE_Manager nessa torre, abre a UI dele
+            if (BYTE != null)
+            {
+                if (BYTE.BYTELevel < 3)
+                    BYTE.OpenUpgradeUI();
+                return;
+            }
+
+            return;
+        };
 
         Tower towerToBuild = BuildManager.main.GetSelectedTower();
 
         if (towerToBuild.cost > LevelManager.main.money)
         {
-            Debug.Log("Você não tem dinheiro para comprar isso");
+            Debug.Log("Vocï¿½ nï¿½o tem dinheiro para comprar isso");
             return;
         }
 
         LevelManager.main.SpendMoney(towerToBuild.cost);
 
-        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-
+        towerOBJ = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        AMV = towerOBJ.GetComponent<AMV_Manager>();
+        BYTE = towerOBJ.GetComponent<BYTE_Manager>();
     }
 }

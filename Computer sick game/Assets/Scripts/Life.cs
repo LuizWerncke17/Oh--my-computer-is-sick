@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class Life : MonoBehaviour
 {
-    [Header("Prefabs do Coração (1 por estágio)")]
-    [SerializeField] private GameObject fullHeartPrefab;    // 30–21
-    [SerializeField] private GameObject mediumHeartPrefab;  // 20–11
-    [SerializeField] private GameObject lowHeartPrefab;     // 10–1
+    [Header("Prefabs do CoraÃ§Ã£o")]
+    [SerializeField] private GameObject fullHeartPrefab;    // 30ï¿½21
+    [SerializeField] private GameObject mediumHeartPrefab;  // 20ï¿½11
+    [SerializeField] private GameObject lowHeartPrefab;     // 10ï¿½1
     [SerializeField] private GameObject brokenHeartPrefab;  // 0
 
-    // Instância atual do prefab ativo
+    // InstÃ¢ncia atual do prefab ativo
     private GameObject currentHeartInstance;
 
     private enum HeartStage { Full, Medium, Low, Broken }
     private HeartStage currentStage = HeartStage.Full;
 
-    private int lastLife = -1; // para detectar mudanças na vida
+    private int lastLife = -1; // para detectar mudanï¿½as na vida
 
     private void Start()
     {
-        UpdateHeartPrefab(true); // força o primeiro coração ao iniciar
+        UpdateHeartPrefab(true); // forï¿½a o primeiro coraï¿½ï¿½o ao iniciar
     }
 
     private void Update()
@@ -27,7 +27,7 @@ public class Life : MonoBehaviour
 
         int life = LevelManager.main.life;
 
-        // Só atualiza se a vida mudou desde o último frame
+        // Sï¿½ atualiza se a vida mudou desde o ï¿½ltimo frame
         if (life != lastLife)
         {
             lastLife = life;
@@ -45,7 +45,7 @@ public class Life : MonoBehaviour
 
         currentStage = newStage;
 
-        // Destroi o coração antigo, se existir
+        // Destroi o coraï¿½ï¿½o antigo, se existir
         if (currentHeartInstance != null)
         {
             Destroy(currentHeartInstance);
@@ -57,7 +57,7 @@ public class Life : MonoBehaviour
 
         if (prefabToSpawn == null)
         {
-            Debug.LogWarning($"HeartManager: prefab para {currentStage} não atribuído.");
+            Debug.LogWarning($"HeartManager: prefab para {currentStage} nï¿½o atribuï¿½do.");
             return;
         }
 
@@ -71,11 +71,11 @@ public class Life : MonoBehaviour
     private HeartStage DetermineStageForLife(int life)
     {
         if (life > 20)
-            return HeartStage.Full;      // 30–21
+            return HeartStage.Full;      // 30ï¿½21
         else if (life > 10)
-            return HeartStage.Medium;    // 20–11
+            return HeartStage.Medium;    // 20ï¿½11
         else if (life > 0)
-            return HeartStage.Low;       // 10–1
+            return HeartStage.Low;       // 10ï¿½1
         else
             return HeartStage.Broken;    // 0
     }

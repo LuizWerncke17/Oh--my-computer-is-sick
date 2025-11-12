@@ -10,7 +10,6 @@ public class Bullet : MonoBehaviour
 
     [Header("Attribute")]
     [SerializeField] private float bulletSpeed = 5f;
-    [SerializeField] private float bps = 1f; //Bullets Per Second
     [SerializeField] private int bulletDamage = 1;
     [SerializeField] private float timeSinceSpawn;
 
@@ -28,6 +27,9 @@ public class Bullet : MonoBehaviour
     {
         // calcula dire��o a partir da posi��o do alvo na hora do disparo
         moveDirection = (targetPosition - (Vector2)transform.position).normalized;
+
+        float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle - 180f);
     }
 
     public void EliminateBullet()
