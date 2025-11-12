@@ -27,6 +27,7 @@ public class EnemySpawner : MonoBehaviour
     private bool isSpawning = false;
 
     private List<GameObject> currentWaveEnemies = new List<GameObject>();
+    private Dictionary<Health_LB1, float> enemyDamageBuffer = new Dictionary<Health_LB1, float>();
 
     private void Awake()
     {
