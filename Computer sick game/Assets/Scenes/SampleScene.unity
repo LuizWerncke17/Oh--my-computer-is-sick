@@ -3662,7 +3662,7 @@ MonoBehaviour:
   - {fileID: 8420153714109690282, guid: 9437f5ce0be28484e814e8418bff9864, type: 3}
   - {fileID: 3904208594885519256, guid: ed52d55d7c3db954fb7b5ce8be674baa, type: 3}
   baseEnemies: 8
-  timeBetweenWaves: 2
+  timeBetweenWaves: 1
   difficultyScalingFactor: 0.75
   baseEnemiesPerSecond: 0.7
   maxEnemiesPerSecond: 3
@@ -18363,7 +18363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4505594061141207499, guid: 8fa6bf4d1cf08414eadb42fbefa41d0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e767b7b8f1916ec468aaff47910ee54c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
